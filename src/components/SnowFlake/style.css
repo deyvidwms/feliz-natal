@@ -1,0 +1,19 @@
+.snowflake {
+  top: 0;
+  position: absolute;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: falling linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
